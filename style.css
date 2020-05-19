@@ -61,7 +61,8 @@ form button{
 }
 
 form button:hover{
-    background: rgb(229, 250, 251);
+    background: black;
+    color: white ;
     transition: all 0.6s ease;
 }
 
@@ -69,4 +70,44 @@ form button:hover{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.todo-list{
+    list-style: none;
+    min-width: 30%;
+}
+
+.todo{
+    margin: 10px;
+    background:white;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.todo li{
+    flex: 1;
+
+}
+
+.trash-btn {
+    margin: 8px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    background: white;
+    color: black;
+    border-radius: 10px;
+}
+
+
+.trash-btn:hover{
+    background: black;
+    color: white ;
+    transition: all 0.6s ease;
 }

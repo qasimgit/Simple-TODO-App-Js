@@ -7,8 +7,21 @@ const todoList = document.querySelector('.todo-list');
 // EventListener //
 
 todoButton.addEventListener('click' , addTodo);
+todoList.addEventListener("click",deleteCheck);
 
 //functions //
+
+function deleteCheck(e){
+    let item = e.target;
+    console.log(item);
+    if(item.parentElement.classList[0] === "trash-btn"){
+        const todo = item.parentElement;
+        todo.parentElement.remove();  
+    }
+
+
+
+}
 
 function addTodo(event) {
     //prevent to submit form //
@@ -19,14 +32,14 @@ function addTodo(event) {
     // creating li //
     const newTodo = document.createElement('li');
     newTodo.classList.add('todo-item');
-    newTodo.innerHTML = 'Hey'
+    newTodo.innerText = todoInput.value;
     todoDiv.appendChild(newTodo);
 
     //check button//
-    const completeButton = document.createElement('button');
-    completeButton.classList.add('complete-btn');
-    completeButton.innerHTML = "<i class='fa fa-check'></i>";
-    todoDiv.appendChild(completeButton);
+    // const completeButton = document.createElement('button');
+    // completeButton.classList.add('complete-btn');
+    // completeButton.innerHTML = "<i class='fa fa-check'></i>";
+    // todoDiv.appendChild(completeButton);
 
     // delete button//
 
@@ -35,9 +48,16 @@ function addTodo(event) {
     trashButton.innerHTML = "<i class='fa fa-trash'></i>";
     todoDiv.appendChild(trashButton);
 
+
+    
+
     //appending to ul list//
 
     todoList.appendChild(todoDiv);
+
+    //clearoing iput value after enter//
+
+    todoInput.value = "";
 
 
 }
