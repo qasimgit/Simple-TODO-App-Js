@@ -26,6 +26,7 @@ body {
 header{
     font-size: 35px;
     cursor: pointer;
+    cursor: pointer;
 }
 
 header , form {

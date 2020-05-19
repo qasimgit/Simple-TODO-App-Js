@@ -35,11 +35,7 @@ function addTodo(event) {
     newTodo.innerText = todoInput.value;
     todoDiv.appendChild(newTodo);
 
-    //check button//
-    // const completeButton = document.createElement('button');
-    // completeButton.classList.add('complete-btn');
-    // completeButton.innerHTML = "<i class='fa fa-check'></i>";
-    // todoDiv.appendChild(completeButton);
+
 
     // delete button//
 
