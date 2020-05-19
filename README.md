@@ -1,8 +1,9 @@
 # Simple-TODO-App-Js
 
-basic vanilla javascript project
+* Basic Vanilla Javascript Project
 
-Only input and delete functionality
+* Only input and delete functionality
 
 
-![Sample Pictures](https://gph.is/g/ZddP9P2)
+![Sample Pictures](F:\practice projects\javascript\firebase.todoapp.jpg)
+![Sample Pictures](F:\practice projects\javascript\firebase.2.jpg)
